@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rate_bg_info"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="-50dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_viewstatus_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rate_dialog_title_bg">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Rate Us"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    android:text="We would really appreciate a positive review on the Play Store as this will really help us to make improvements faster.  "/>
+
+                <RatingBar
+                    android:id="@+id/ratView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="5"
+                    android:focusableInTouchMode="false"
+                    android:layout_margin="10dp"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp">
+
+                    <Button
+                        android:id="@+id/btn_yes"
+                        android:layout_height="40dp"
+                        android:layout_width="60dp"
+                        android:text="Ok"
+                        android:textColor="#ffffff"
+                        android:background="@color/themeColorRead"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:src="@mipmap/ic_close_dialog"
+            android:background="@drawable/rate_circle_white"
+            android:padding="5dp"
+            android:tint="@color/themeColorRead"/>
+    </FrameLayout>
+
+</LinearLayout>
+

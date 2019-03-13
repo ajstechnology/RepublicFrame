@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="menu_icon_height_width">40dp</dimen>
+
+    <!-- Footer menu icon -->
+    <dimen name="footer_menu_w_h">40dp</dimen>
+    <dimen name="footer_menu_icon_p">5dp</dimen>
+
+    <dimen name="stroke_size">3dp</dimen>
+
+</resources>

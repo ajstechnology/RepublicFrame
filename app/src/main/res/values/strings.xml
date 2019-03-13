@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RepublicFrame</string>
+
+
+    <string name="banner_one">ca-app-pub-3704545923813865/4375423589</string>
+
+    <string name="ShareText">"This is a great app, check it out!\nhttps://play.google.com/store/apps/details?id="</string>
+</resources>

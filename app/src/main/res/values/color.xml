@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="green">#60C26A</color>
+    <color name="drop_target_color1">#FF993311</color>
+    <color name="drop_target_color2">#FFA99033</color>
+    <color name="drop_target_enabled">#FF009933</color>
+    <color name="drop_target_disabled">#FFdddddd</color>
+    <color name="themeColorRead">#D4232D</color>
+    <color name="green_tran">#99007000</color>
+    <color name="read_tran">#99D4232D</color>
+
+    <color name="stroke_color">#8cf437</color>
+
+</resources>

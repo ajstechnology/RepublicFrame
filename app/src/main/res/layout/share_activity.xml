@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_frame"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#55000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/ll_footer_view"
+        android:orientation="vertical"
+        android:layout_above="@+id/adView"
+        android:layout_toRightOf="@+id/lv_frame">
+
+        <RelativeLayout
+            android:id="@+id/rl_puppy_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.ajstechnosoft.republicframe.utility.TouchImageView
+                    android:id="@+id/preview_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f1" />
+
+
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jay Hind"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:layout_alignParentBottom="true"
+                android:drawablePadding="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textStyle="bold"/>
+           <!-- <ImageView
+                android:id="@+id/iv_puppy_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_footer_view"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:id="@+id/ll_gradute_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#3A559F"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@mipmap/ic_facebook"
+                android:gravity="center"
+                android:text="Share"
+                android:textColor="#ffffff" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_gradute_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5CBE4A"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@mipmap/ic_whats"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_gradute_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7B3FBE"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@mipmap/ic_save"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_one" />
+</RelativeLayout>

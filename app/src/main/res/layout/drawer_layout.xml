@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_above="@+id/ll_main_footer"/>
+
+    <LinearLayout
+        android:id="@+id/ll_main_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/ads_gallery_adsView">
+
+
+        <ImageView
+            android:id="@+id/lv_footer_share"
+            android:layout_width="@dimen/footer_menu_w_h"
+            android:layout_height="@dimen/footer_menu_w_h"
+            android:src="@mipmap/share"
+            android:layout_weight="1"
+            android:padding="@dimen/footer_menu_icon_p"/>
+        <ImageView
+            android:id="@+id/lv_footer_rate"
+            android:layout_width="@dimen/footer_menu_w_h"
+            android:layout_height="@dimen/footer_menu_w_h"
+            android:src="@mipmap/ic_rateus"
+            android:layout_weight="1"
+            android:padding="@dimen/footer_menu_icon_p"/>
+        <ImageView
+            android:id="@+id/lv_footer_more"
+            android:layout_width="@dimen/footer_menu_w_h"
+            android:layout_height="@dimen/footer_menu_w_h"
+            android:src="@mipmap/ic_more_app"
+            android:layout_weight="1"
+            android:padding="@dimen/footer_menu_icon_p"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ads_gallery_adsView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_one" />
+
+</RelativeLayout>
+
